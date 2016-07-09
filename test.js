@@ -41,14 +41,27 @@ client
     console.log(url);
     if(url.indexOf('confirm')>-1){
         console.log('confirm');
-        client.click('#doOnceRegist');
+        client.click('#doOnceRegist')
+        .getUrl().then(function(cUrl){
+            console.log(cUrl);
+            if(cUrl.indexOf('complete')>-1){
+                console.log('complete');
+            }
+        });
     }else if(url.indexOf('input')>-1){
         console.log('error');
         console.log(client);
         client
             .selectByAttribute('#carId', 'value', process.env.TP_SECONDARY_CAR)
             .click('#doCheck')
-            .click('#doOnceRegist');
+            .click('#doOnceRegist')
+            .getUrl().then(function(cUrl){
+            console.log(cUrl);
+            if(cUrl.indexOf('complete')>-1){
+                console.log('complete');
+            }
+        });
     }
 })
-.end();
+//.end();
+;
