@@ -4,7 +4,7 @@ machine:
 
 dependencies:
   pre:
-      - http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.0.jar
+      - curl -O http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.0.jar
 
 test:
   pre:
