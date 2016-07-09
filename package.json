@@ -8,7 +8,7 @@
   },
   "author": "",
   "dependencies": {
-      "webdriverio": "*"
+      "webdriverio": "4.2.1"
   },
   "license": "ISC"
 }
