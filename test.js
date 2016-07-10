@@ -28,7 +28,7 @@ client
 .setValue('#cardNo2', process.env.TP_CARD_NO2)
 .setValue('#tpPassword', process.env.TP_PASSWORD)
 .click('#tpLogin')
-.waitForExist('#yakkan_box')
+.waitForExist('#yakkan_box', 5000)
 .click('#yakkan_box .s_agree')
 .url('https://plus.timescar.jp/view/reserve/input.jsp?scd='+process.env.TP_STATION_CODE)
 .selectByAttribute('#carId', 'value', process.env.TP_PRIMARY_CAR)
