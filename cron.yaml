@@ -1,3 +1,4 @@
+cron:
 - description: run ci
   url: /admin/
   schedule: every sat,sun 00:03
