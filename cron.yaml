@@ -1,0 +1,4 @@
+- description: run ci
+  url: /admin/
+  schedule: every sat,sun 00:03
+  timezone: Asia/Tokyo
